@@ -32,8 +32,8 @@ To expirement with the code, make changes to any file you want and watch the res
 ## Share your own scripts/examples
 If you want to contribute your own examples/scirpts make a php script in one of those folders and create a pull request in order to be added. 
 
-## Future addition 
-Since this project is news, I have certain ideas to implement. 
+## Future additions 
+Since this project is new, I have certain ideas to implement. 
 
 * More custom scripts that go beyond the basic functionalities of PHP functions. 
 * Be able to edit and run the code within the browser. 
