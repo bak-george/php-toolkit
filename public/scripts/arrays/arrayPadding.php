@@ -32,3 +32,9 @@ $paddedCharacters = array_pad($characters, $minLength, $paddingValue);
 echo "Padded Character Names: " . PHP_EOL;
 print_r($paddedCharacters);
 
+echo "<h3><strong>Add values in the beggining</strong></h3>";
+$paddingValue = 'Mr. Golderfold';
+
+$paddedCharacters = array_pad($characters, -10, $paddingValue);
+echo "Padded Character Names: " . PHP_EOL;
+print_r($paddedCharacters);
