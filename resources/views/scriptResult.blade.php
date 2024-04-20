@@ -16,26 +16,20 @@
 require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs' }});
 
 require(['vs/editor/editor.main'], function() {
-    var editor = monaco.editor.create(document.getElementById('editor'), {
-        value: `{{!!$styledCode!!}}`,
-        language: 'php', 
-        theme: 'vs-dark', 
-        automaticLayout: true,
-        fontSize: 16,
-        formatOnType: true
-    });
-});
+    var editorData = [
+        { id: 'editor', value: `{!! $styledCode !!}`, language: 'php' },
+        { id: 'output', value: `{!! $result['output'] !!}`, language: 'plaintext' }
+    ];
 
-require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs' }});
-
-require(['vs/editor/editor.main'], function() {
-    var editor = monaco.editor.create(document.getElementById('output'), {
-        value: `{{!!$result['output']!!}}`,
-        language: 'plaintext', 
-        theme: 'vs-dark', 
-        automaticLayout: true,
-        fontSize: 16,
-        formatOnType: true
+    editorData.forEach(function(data) {
+        var editor = monaco.editor.create(document.getElementById(data.id), {
+            value: data.value,
+            language: data.language, 
+            theme: 'vs-dark', 
+            automaticLayout: true,
+            fontSize: 16,
+            formatOnType: true
+        });
     });
 });
 </script>
