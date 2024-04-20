@@ -19,7 +19,7 @@ require(['vs/editor/editor.main'], function() {
         value: `{{!!$styledCode!!}}`,
         language: 'php', 
         theme: 'vs-dark', 
-        automaticLayout: true 
+        automaticLayout: true
     });
 });
 </script>
