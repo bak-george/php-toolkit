@@ -9,8 +9,8 @@ $userData = [
 
 list($name, $age, $email, $location) = $userData;
 
-echo "Name: $name<br>";
-echo "Age: $age<br>";
-echo "Email: $email<br>";
-echo "Location: $location<br>";
+echo "Name: {$name} " . PHP_EOL 
+   . "Age: {$age} "   . PHP_EOL
+   . "Email: $email"  . PHP_EOL
+   . "Location: $location";
 
