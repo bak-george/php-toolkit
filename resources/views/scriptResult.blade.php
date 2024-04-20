@@ -4,7 +4,7 @@
     <div class="flex w-[80rem] h-auto">
         <pre class="w-1/2 text-wrap drop-shadow-lg h-auto">{{ $result['output'] }}</pre>
         <div class="w-1/2 h-80"> <!-- Increased height to 64px, adjust as needed -->
-            <div id="editor" class="h-full"></div>
+            <div id="editor" class="shadow-lg h-full"></div>
         </div>
     </div>
 </section>
