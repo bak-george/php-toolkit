@@ -1,7 +1,7 @@
 # PHP Toolkit
 ![Image](gitHubImg/home.png)
 ![Image](gitHubImg/arrays.png)
-![Image](gitHubImg/arrayMerge.png)
+![Image](gitHubImg/vsEditor.png)
 
 PHP Toolkit is a resource for PHP funcitonalities. 
 
