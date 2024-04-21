@@ -21,7 +21,7 @@ class ScriptController extends Controller
         $this->scriptRunnerService = $scriptRunnerService;
     }
     
-    public function showScriptResult(string $directoryName,string $title): View
+    public function showScriptResult(string $directoryName, string $title): View
     {
         $scriptPath = public_path("/scripts/{$directoryName}/{$title}.php");
 
@@ -29,7 +29,7 @@ class ScriptController extends Controller
             $result = $this->scriptRunnerService->executeScript($scriptPath);
             $parsedCode = $this->parsePHPFile($scriptPath);
 
-            return view('scriptResult', ['result' => $result, 'styledCode' => $parsedCode]);
+            return view('scriptResult', ['result' => $result, 'styledCode' => $parsedCode, 'title' => $title]);
         } else {
             abort(404);
         }
