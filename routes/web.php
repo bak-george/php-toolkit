@@ -12,6 +12,7 @@ Route::get('/{arrays}', [FilesBasedOnCategoryController::class, 'getFilesUnderCa
 Route::get('/{strings}', [FilesBasedOnCategoryController::class, 'getFilesUnderCategory'])->name('strings.show');
 Route::get('/{utilities}', [FilesBasedOnCategoryController::class, 'getFilesUnderCategory'])->name('utilities.show');
 Route::get('/{functions}', [FilesBasedOnCategoryController::class, 'getFilesUnderCategory'])->name('functions.show');
+Route::get('/{linkedLists}', [FilesBasedOnCategoryController::class, 'getFilesUnderCategory'])->name('linkedlists.show');
 
 Route::get('/{category}/{title}', [ScriptController::class, 'showScriptResult'])->name('script.result');
 

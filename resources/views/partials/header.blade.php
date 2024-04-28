@@ -12,7 +12,7 @@
         <header class="bg-[#484C89] text-white w-full rounded-t-3xl border-b-4 border-[#777BB3] flex flex-col items-center justify-items-center shadow-lg relative top-0 left-0 p-3">
             <h1 class="text-4xl p-5 drop-shadow-lg hover-effect-h1">
                 <a href="{{ route('home') }}">
-                    PHP Toolkit
+                    {{ 'PHP Toolkit' }} 
                 </a>
             </h1>
         </header>
