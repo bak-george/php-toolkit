@@ -25,6 +25,22 @@ class SingleLinkedList
         return true; 
     }
 
+    public function insertFirst(string $data): bool
+    {
+        $newNode = new ListNode($data);
+
+        if ($this->firstNode === null) {
+            $this->firstNode = &$newNode;
+        } else {
+            $currentFirstNode = $this->firstNode;
+            $this->firstNode  = &$newNode;
+            $newNode->next    = $currentFirstNode;
+        }
+        $this->totalNodes++;
+
+        return true;
+    }
+
     public function show()
     {
         echo "Total nodes: {$this->totalNodes}" . PHP_EOL;
@@ -39,4 +55,5 @@ class SingleLinkedList
 $exampleNodes = new SingleLinkedList();
 $exampleNodes->insertNode('node 1'); 
 $exampleNodes->insertNode('node 2');
+$exampleNodes->insertFirst('node 3');
 $exampleNodes->show();
